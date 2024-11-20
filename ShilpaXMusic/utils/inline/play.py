@@ -66,10 +66,15 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [ InlineKeyboardButton(text="𝐎ᴡɴᴇʀ࿐", url=f"https://t.me/Hyper_Brand")],
-    ],
-    [ InlineKeyboardButton(text="𝐒ᴜᴘᴘᴏʀᴛ࿐", url=f"https://t.me/Sr_Family_Grp")],
-    ]
+       
+    [
+        InlineKeyboardButton(
+            text="💝ᴏᴡɴᴇʀ💝", url=f"tg://openmessage?user_id={OWNER_ID}",
+        ),
+        InlineKeyboardButton(
+            text="🥰sᴜᴩᴩᴏʀᴛ🥰", url=f"https://t.me/Sr_Family_Grp",
+        ),
+]
     
     return buttons
 
@@ -82,11 +87,17 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        
         ],
-        [ InlineKeyboardButton(text="𝐎ᴡɴᴇʀ࿐", url=f"https://t.me/Hyper_Brand")],
-    ],
-    [ InlineKeyboardButton(text="𝐒ᴜᴘᴘᴏʀᴛ࿐", url=f"https://t.me/Sr_Family_Grp")],
-    ]
+       
+    [
+        InlineKeyboardButton(
+            text="💝ᴏᴡɴᴇʀ💝", url=f"tg://openmessage?user_id={OWNER_ID}",
+        ),
+        InlineKeyboardButton(
+            text="🥰sᴜᴩᴩᴏʀᴛ🥰", url=f"https://t.me/Sr_Family_Grp",
+        ),
+]
     return buttons
 
 
